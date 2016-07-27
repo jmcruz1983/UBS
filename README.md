@@ -1,27 +1,24 @@
-Uber Build System (UBS)
-=======================
+## Uber Build System (UBS)
 
-WHAT IT IS:
-+++++++++++
+### WHAT IT IS:
+
 This it a simple build system to create basic android project, compile, package, install and
 launch it on an Android emulator.
 
+### REQUIREMENTS:
 
-REQUIREMENTS:
-+++++++++++++
 UBS requires:
 * Mac-OSx
 * Python2.7
 * Java 1.7
 * Curl library to download SDK from Google and PIP
 
-WHY?
+#### WHY?
 This packages need to be installed manually as they need user consent and admin priviledges
 
-HOW TO USE IT:
-++++++++++++++
-FIRST,  clone the sources
-SECOND, Run ./setup.sh to run all the initial setup:
+### HOW TO USE IT:
+1. FIRST,  clone the sources
+2. SECOND, Run ./setup.sh to run all the initial setup:
 	* Setup Workspace
 	* Install necessary python dependencies using PIP
 	* Search for valid java
@@ -29,11 +26,9 @@ SECOND, Run ./setup.sh to run all the initial setup:
 	* Search for valid SDK and install needed tools and emulator
 	* Start the emulator in background
 	* Save all settings to file
-THIRD, Run “./ubs.py —-help” in command-line to learn about usage
+3. THIRD, Run “./ubs.py —-help” in command-line to learn about usage
 
-
-OBSERVATIONS:
-+++++++++++++
+### OBSERVATIONS:
 * It strictly requires Java1.7 due to some incompatibility using Java 1.8 and newer ANDROID SDK
 * Setup.sh needs to be run at least once at the beginning
 * Setup.sh is smart enough to setup needed stuff only once
@@ -41,8 +36,8 @@ OBSERVATIONS:
 * UBS only re-compiles the new added or modified files
 * Have a look to UBS.mp4 video to see some examples of usage 
 
-EXAMPLES OF USAGE:
-++++++++++++++++++
+### EXAMPLES OF USAGE:
+``` bash
 -> ./setup.sh 
 Running setup
 --> Searching for Java
@@ -109,3 +104,4 @@ optional arguments:
 22:53:39 INFO    : launch: Installed application "Test.zipped.apk" to emulator
 22:53:39 INFO    : launch: Launching the application in the emulator
 22:53:39 INFO    : launch: Launched the application in the emulator
+```
